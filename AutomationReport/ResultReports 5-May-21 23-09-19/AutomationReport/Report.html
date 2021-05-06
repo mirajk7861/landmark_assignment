@@ -1,0 +1,1243 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 5, 2021 11:09:19 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@airlinefilter</a><a class="dropdown-item" href="#">@searchflight</a><a class="dropdown-item" href="#">@FlightSpecialcharacter</a><a class="dropdown-item" href="#">@hotel</a><a class="dropdown-item" href="#">@hotelspecialcharacter</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Applyfilters hotel search</p>
+            <p class="text-sm">
+              <span>23:09:20 PM</span> / <span>33:17:186</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Applyfilters hotel search</h5>
+<span class='badge badge-success'>05.05.2021 23:09:20</span>
+<span class='badge badge-danger'>05.05.2021 23:12:37</span>
+<span class='badge badge-default'>33:17:186</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Apply filters for property type</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsResults.clickOnHotelIcon()">
+                <span>When clicks on hotel icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsResults.clickSearch()">
+                <span>And Clicks on Hotel Search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.HotelApplyFilters.userIsInHotelSearchResultsPage()">
+                <span>Given User is in hotel search results page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefs.HotelApplyFilters.applyFilterOnPropertyType()">
+                <span>When applies filter on property type</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at applicationPages.HotelSearchResultsPage.applyFilterOnPropertyType(HotelSearchResultsPage.java:22)
+	at stepdefs.HotelApplyFilters.applyFilterOnPropertyType(HotelApplyFilters.java:23)
+	at ?.applies filter on property type(file:///C:/BIS/webautomationDemo/src/test/java/features/ApplyFilters_Hotel_Search.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.HotelApplyFilters.verifyPropertyTypeFilterResults()">
+                <span>Then selected hotel type reuslts should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepdefs.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Apply filters for user rating</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsResults.clickOnHotelIcon()">
+                <span>When clicks on hotel icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsResults.clickSearch()">
+                <span>And Clicks on Hotel Search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.HotelApplyFilters.userIsInHotelSearchResultsPage()">
+                <span>Given User is in hotel search results page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.HotelApplyFilters.applyFilterOnUserRatings()">
+                <span>When applies filter on user ratings for good and excellent</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.HotelApplyFilters.selectedRatedHotelsAppear()">
+                <span>Then selected user rated hotels should appear</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Apply filters for safety and hygiene</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsResults.clickOnHotelIcon()">
+                <span>When clicks on hotel icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsResults.clickSearch()">
+                <span>And Clicks on Hotel Search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.HotelApplyFilters.userIsInHotelSearchResultsPage()">
+                <span>Given User is in hotel search results page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.HotelApplyFilters.applySafetyFilter()">
+                <span>When selects safe and hygiene stay filter</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.HotelApplyFilters.verifySafetyFilter()">
+                <span>Then only safety assured hotels should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Applyfilters flight search</p>
+            <p class="text-sm">
+              <span>23:12:37 PM</span> / <span>35:30:416</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Applyfilters flight search</h5>
+<span class='badge badge-success'>05.05.2021 23:12:37</span>
+<span class='badge badge-danger'>05.05.2021 23:18:07</span>
+<span class='badge badge-default'>35:30:416</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Apply filters for airlines</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.clicksonFlightIcon()">
+                <span>Then clicks on flight icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.entersSourceAndDestination()">
+                <span>And enters source and destination</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.clicksOnSearchButton()">
+                <span>And Clicks on Search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.userIsInserchresultsPage()">
+                <span>Given User is in search results page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.applyFilterForStops()">
+                <span>When applies filter on airlines</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.verifyOnlySelctedAIrlinesFlightsAreDisplayed()">
+                <span>Then selected airlines flights should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>Apply filters for stops</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.clicksonFlightIcon()">
+                <span>Then clicks on flight icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.entersSourceAndDestination()">
+                <span>And enters source and destination</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.clicksOnSearchButton()">
+                <span>And Clicks on Search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.userIsInserchresultsPage()">
+                <span>Given User is in search results page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.appliesFilterOnStops()">
+                <span>When applies filter on stops</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.verifyStopsDisplayedInResults()">
+                <span>Then selected stop flights should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Apply filters for Passenger and Class</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.clicksonFlightIcon()">
+                <span>Then clicks on flight icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.entersSourceAndDestination()">
+                <span>And enters source and destination</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.clicksOnSearchButton()">
+                <span>And Clicks on Search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.userIsInserchresultsPage()">
+                <span>Given User is in search results page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.selectsTwoPassengers()">
+                <span>When selects two passengers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.selectsBusinessClass()">
+                <span>And selects business class</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.clickOnDone()">
+                <span>And clicks on Done</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.clickOnSearch()">
+                <span>And clicks on search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.FlightSearchResultsApplyFilters.verifyBusinessClassFlightsDisplayed()">
+                <span>Then business class flights should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Hotel search special charaterss</p>
+            <p class="text-sm">
+              <span>23:18:07 PM</span> / <span>30:39:377</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Hotel search special charaterss</h5>
+<span class='badge badge-success'>05.05.2021 23:18:07</span>
+<span class='badge badge-danger'>05.05.2021 23:18:47</span>
+<span class='badge badge-default'>30:39:377</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="58"><span class="badge log pass-bg mr-2">Pass</span>Input special characters while doing hotel search</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsResults.clickOnHotelIcon()">
+                <span>When clicks on hotel icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsSpecialCharacters.enterSpecialCharacters()">
+                <span>And enters special characters in city</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsSpecialCharacters.noResultsFoundMessageDisplayed()">
+                <span>Then No results found message should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="64"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Search flights</p>
+            <p class="text-sm">
+              <span>23:18:47 PM</span> / <span>30:57:763</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Search flights</h5>
+<span class='badge badge-success'>05.05.2021 23:18:47</span>
+<span class='badge badge-danger'>05.05.2021 23:19:45</span>
+<span class='badge badge-default'>30:57:763</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>Search flights with any parameter</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.clicksonFlightIcon()">
+                <span>Then clicks on flight icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.entersSourceAndDestination()">
+                <span>And enters source and destination</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.clicksOnSearchButton()">
+                <span>And Clicks on Search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlights.searchresultPageShouldAppear()">
+                <span>Then Search results page should appear</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="72"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Search hotels</p>
+            <p class="text-sm">
+              <span>23:19:45 PM</span> / <span>30:54:532</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Search hotels</h5>
+<span class='badge badge-success'>05.05.2021 23:19:45</span>
+<span class='badge badge-danger'>05.05.2021 23:20:39</span>
+<span class='badge badge-default'>30:54:532</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=72</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="73"><span class="badge log fail-bg mr-2">Fail</span>Search hotel with any parameter</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchHotelsResults.clickOnHotelIcon()">
+                <span>When clicks on hotel icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefs.SearchHotelsResults.selectsRoomsAndGuests()">
+                <span>And selects rooms and guests</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: chrome on WINDOWS (f1693c3d428ef57ae267a9c478888beb7471b451)] -> xpath: //input[@id='guest']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IN-SHAIKR1-1', ip: '172.22.32.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Windows\proxy\scoped_dir...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2555}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 90.0.4430.72, webStorageEnabled: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f1693c3d428ef57ae267a9c4788...}
+Session ID: f1693c3d428ef57ae267a9c478888beb7471b451
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.flightsearch.libraries.Generic.waitUntilElementIsClickable(Generic.java:694)
+	at applicationPages.HomePage.selectRoomsAndGuests(HomePage.java:83)
+	at stepdefs.SearchHotelsResults.selectsRoomsAndGuests(SearchHotelsResults.java:22)
+	at ?.selects rooms and guests(file:///C:/BIS/webautomationDemo/src/test/java/features/searchHotels.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.SearchHotelsResults.clickSearch()">
+                <span>And Clicks on Hotel Search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.SearchHotelsResults.verifyHotelSearchPage()">
+                <span>Then hotel search results appear</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepdefs.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="80"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Search flights by special characters</p>
+            <p class="text-sm">
+              <span>23:20:39 PM</span> / <span>30:51:061</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Search flights by special characters</h5>
+<span class='badge badge-success'>05.05.2021 23:20:39</span>
+<span class='badge badge-danger'>05.05.2021 23:21:30</span>
+<span class='badge badge-default'>30:51:061</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Search flights by special characters</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefs.SearchFlights.userNavigatesToHomePage()">
+                <span>Given User navigates to home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlightsSpecialCharacters.enterSpecialCharacters()">
+                <span>When enters special characters in from city</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.SearchFlightsSpecialCharacters.noSearchResultPageShouldBeDisplayed()">
+                <span>Then no search results should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='72' id='76'>And selects rooms and guests</a>
+<div class="">
+<span class="badge badge-default">Search hotels.Search hotel with any parameter.And selects rooms and guests</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:10:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>When applies filter on property type</a>
+<div class="">
+<span class="badge badge-default">Applyfilters hotel search.Apply filters for property type.When applies filter on property type</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@airlinefilter</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@airlinefilter</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:12:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='27'>Apply filters for airlines</a>
+<div class="">
+<span class="badge badge-default">Applyfilters flight search.Apply filters for airlines</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:14:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='36'>Apply filters for stops</a>
+<div class="">
+<span class="badge badge-default">Applyfilters flight search.Apply filters for stops</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:16:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='45'>Apply filters for Passenger and Class</a>
+<div class="">
+<span class="badge badge-default">Applyfilters flight search.Apply filters for Passenger and Class</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@searchflight</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@searchflight</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:18:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='64' id='65'>Search flights with any parameter</a>
+<div class="">
+<span class="badge badge-default">Search flights.Search flights with any parameter</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@FlightSpecialcharacter</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@FlightSpecialcharacter</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:20:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='80' id='81'>Search flights by special characters</a>
+<div class="">
+<span class="badge badge-default">Search flights by special characters.Search flights by special characters</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@hotel</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@hotel</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:09:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Apply filters for property type</a>
+<div class="">
+<span class="badge badge-default">Applyfilters hotel search.Apply filters for property type</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:10:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Apply filters for user rating</a>
+<div class="">
+<span class="badge badge-default">Applyfilters hotel search.Apply filters for user rating</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:11:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Apply filters for safety and hygiene</a>
+<div class="">
+<span class="badge badge-default">Applyfilters hotel search.Apply filters for safety and hygiene</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:19:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='72' id='73'>Search hotel with any parameter</a>
+<div class="">
+<span class="badge badge-default">Search hotels.Search hotel with any parameter</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@hotelspecialcharacter</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@hotelspecialcharacter</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:18:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='57' id='58'>Input special characters while doing hotel search</a>
+<div class="">
+<span class="badge badge-default">Hotel search special charaterss.Input special characters while doing hotel search</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 5, 2021 11:09:19 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 5, 2021 11:21:30 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'>
+<b>4</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='33%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'><b>8</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='20%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='91%'><b>56</b> steps passed</small></div>
+<div>
+<small data-tooltip='3%'><b>2</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Applyfilters hotel search":197.186,"Applyfilters flight search":330.416,"Hotel search special charaterss":39.377,"Search flights":57.763,"Search hotels":54.532,"Search flights by special characters":51.061
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@airlinefilter</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@searchflight</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@FlightSpecialcharacter</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@hotel</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@hotelspecialcharacter</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 8,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 56,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 3,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
